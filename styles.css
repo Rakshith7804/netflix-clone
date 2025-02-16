@@ -1,0 +1,42 @@
+/* Styling for the scrolling container */
+.image-scroll-container {
+    width: 80%; /* Adjust width as needed */
+    margin: auto;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    white-space: nowrap; /* Prevents wrapping */
+    scrollbar-width: none; /* Hides scrollbar in Firefox */
+    -ms-overflow-style: none; /* Hides scrollbar in IE/Edge */
+}
+
+/* Hide scrollbar for WebKit browsers */
+.image-scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Wrapper for images */
+.image-wrapper ul{
+    display: flex; 
+    gap: 55px;
+    margin-top: 125px; /* Space between images */
+}
+
+/* Image styling */
+.image-wrapper img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px; /* Rounded corners */
+}
+.image-scroll-container h1{
+    color: white;
+    margin-top: 33px;
+    margin-left: -47px;
+    font-size: 2rem;
+    line-height: 2.5;
+    position: absolute;
+}
+
+.image-wrapper .num{
+    margin-top: -12px;
+}
+
